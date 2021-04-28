@@ -1,1 +1,684 @@
-{"onboarding":{"$contentActions":[{"input":{"bypass":false,"$cardContent":{"document":{"id":"a24a3156-5b7e-4123-9bc2-04e4903f0aad","type":"text/plain"},"editable":false,"deletable":false,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[{"stateId":"welcome","conditions":[{"source":"input","comparison":"matches","values":[".*"]}],"$id":"f39e871c-afc0-4532-974c-ac2241ca12c1","$connId":"con_3","$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"onboarding","root":true,"$position":{"top":"120px","left":"644px"},"$title":"Início","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"fallback":{"$contentActions":[{"input":{"bypass":true,"$cardContent":{"document":{"id":"e9d8d98d-7570-4486-b43d-845622217de4","type":"text/plain"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[{"stateId":"error","conditions":[{"source":"input","comparison":"matches","values":[".*"]}],"$id":"79362a02-d11b-4ac0-9f09-c7204aae87d5","$connId":"con_8","$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"onboarding","$invalid":false},"$tags":[],"id":"fallback","$position":{"top":"120px","left":"877px"},"$title":"Exceções","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"welcome":{"$contentActions":[{"action":{"$id":"f660bc9d-dcab-410d-b94e-ce127c9df369","type":"SendMessage","settings":{"id":"a8734b8f-8070-4c0c-8430-cfce108fb777","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"a8734b8f-8070-4c0c-8430-cfce108fb777","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"action":{"$id":"1a2d4b4f-de24-4799-ab5d-e1277f62b685","type":"SendMessage","settings":{"id":"7fc92d8f-4b9f-49a5-90c0-de7ea11ce638","type":"text/plain","content":"Digite o CNPJ","metadata":{}},"$cardContent":{"document":{"id":"7fc92d8f-4b9f-49a5-90c0-de7ea11ce638","type":"text/plain","content":"Digite o CNPJ"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"input":{"bypass":false,"$cardContent":{"document":{"id":"e703fb8a-249c-4f43-ac2c-e9d65abc5d26","type":"text/plain","content":"CNPJ"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"CNPJ","validation":{"rule":"regex","regex":"^(?=.{14,18}$)^([0-9]{2}\\.?[0-9]{3}\\.?[0-9]{3}\\/?[0-9]{4}\\-?[0-9]{2})*$","error":"Por favor digite um CNPJ válido"}},"$invalid":false}],"$conditionOutputs":[{"stateId":"c146fc6c-7784-40e3-af31-317b9b0c2f82","$connId":"con_13","$id":"74baf8c3-1254-4031-b3e3-395b2588ea71","conditions":[{"source":"input","comparison":"exists","values":[]}],"$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"welcome","$position":{"top":"417px","left":"638px"},"$title":"Boas vindas","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"error":{"$contentActions":[{"action":{"$id":"60aaf790-4026-431c-a23f-88b0e5817d70","type":"SendMessage","settings":{"id":"00000000-0000-0000-0000-000000000002","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"00000000-0000-0000-0000-000000000002","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left","editing":false}},"$invalid":false},{"action":{"$id":"9c18ff4c-eb2a-4438-9f90-28d6a001f8d8","type":"SendMessage","settings":{"id":"00000000-0000-0000-0000-000000000003","type":"text/plain","content":"Desculpe, não consegui entender!","metadata":{}},"$cardContent":{"document":{"id":"00000000-0000-0000-0000-000000000003","type":"text/plain","content":"Desculpe, não consegui entender!"},"editable":true,"deletable":true,"position":"left","editing":false}},"$invalid":false},{"input":{"bypass":true,"$cardContent":{"document":{"id":"1ccd6b40-f82d-443a-a99c-c4bc0c315e40","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"onboarding","$invalid":false},"$tags":[],"id":"error","$position":{"top":"240px","left":"877px"},"$title":"Erro padrão","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"c146fc6c-7784-40e3-af31-317b9b0c2f82":{"$contentActions":[{"input":{"bypass":true,"$cardContent":{"document":{"id":"4aef9e6a-90a7-4d71-8bd2-17d1309132e1","type":"text/plain","textContent":"Entrada do usuário","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[{"stateId":"5aead5c6-cc51-41d7-b8a3-72458a052c77","$connId":"con_18","$id":"9128fc5e-b5ed-4954-8442-180ad1085f65","conditions":[{"source":"context","comparison":"equals","values":["true"],"variable":"isCNPJValid"}],"$invalid":false},{"stateId":"d36fd3b7-c7e4-43ca-868e-6b54ea98e8d7","$connId":"con_23","$id":"754c2e29-1704-41f3-8200-50b14313a13b","conditions":[{"source":"context","comparison":"equals","values":["false"],"variable":"isCNPJValid"}],"$invalid":false}],"$enteringCustomActions":[{"$id":"de5dd581-5394-40e1-b016-10102b469add","type":"ExecuteScript","$title":"Executar script","$invalid":false,"settings":{"function":"run","source":"/**\n            * All input variables needs to be passed as function param;\n            * Objects received as param needs to be parsed. Ex.: JSON.parse(inputVariable1);\n            * Objects returned needs to be stringfied. Ex.: JSON.stringify(inputVariable1);\n            **/\n            function run(cnpj) {\n \n    cnpj = cnpj.replace(/[^\\d]+/g,'');\n \n    if(cnpj == '') return false;\n     \n    if (cnpj.length != 14)\n        return false;\n \n    // Elimina CNPJs invalidos conhecidos\n    if (cnpj == \"00000000000000\" || \n        cnpj == \"11111111111111\" || \n        cnpj == \"22222222222222\" || \n        cnpj == \"33333333333333\" || \n        cnpj == \"44444444444444\" || \n        cnpj == \"55555555555555\" || \n        cnpj == \"66666666666666\" || \n        cnpj == \"77777777777777\" || \n        cnpj == \"88888888888888\" || \n        cnpj == \"99999999999999\")\n        return false;\n         \n    // Valida DVs\n    tamanho = cnpj.length - 2\n    numeros = cnpj.substring(0,tamanho);\n    digitos = cnpj.substring(tamanho);\n    soma = 0;\n    pos = tamanho - 7;\n    for (i = tamanho; i >= 1; i--) {\n      soma += numeros.charAt(tamanho - i) * pos--;\n      if (pos < 2)\n            pos = 9;\n    }\n    resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;\n    if (resultado != digitos.charAt(0))\n        return false;\n         \n    tamanho = tamanho + 1;\n    numeros = cnpj.substring(0,tamanho);\n    soma = 0;\n    pos = tamanho - 7;\n    for (i = tamanho; i >= 1; i--) {\n      soma += numeros.charAt(tamanho - i) * pos--;\n      if (pos < 2)\n            pos = 9;\n    }\n    resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;\n    if (resultado != digitos.charAt(1))\n          return false;\n           \n    return true;\n    \n}","inputVariables":["CNPJ"],"outputVariable":"isCNPJValid","LocalTimeZoneEnabled":false},"conditions":[]}],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"c146fc6c-7784-40e3-af31-317b9b0c2f82","root":false,"$title":"Validar CNPJ","$position":{"top":"618px","left":"641px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"5aead5c6-cc51-41d7-b8a3-72458a052c77":{"$contentActions":[{"action":{"$id":"714ee349-fc41-4f76-bf08-943e3b2e10d0","type":"SendMessage","settings":{"id":"f2591beb-484f-455d-96bb-83e89a0e45c3","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"f2591beb-484f-455d-96bb-83e89a0e45c3","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"action":{"$id":"e5e8d47b-9a1d-408d-af2a-da9a57f6d777","type":"SendMessage","settings":{"id":"835ba2b6-79e3-42c0-878a-7ed41cb6ad31","type":"text/plain","content":"O CNPJ é válido","metadata":{}},"$cardContent":{"document":{"id":"835ba2b6-79e3-42c0-878a-7ed41cb6ad31","type":"text/plain","content":"O CNPJ é válido"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"action":{"$id":"74628595-9e07-4978-a276-db62a35949d0","type":"SendMessage","settings":{"id":"30ec927d-0b41-4789-b502-1c0e8625a229","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"30ec927d-0b41-4789-b502-1c0e8625a229","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"action":{"$id":"b52ef254-cedb-4ec6-85e5-60c51da039ed","type":"SendMessage","settings":{"id":"2985258c-d42e-4c37-bb90-04a71c75215a","type":"text/plain","content":"Valor a ser guardado: {{CNPJ}}","metadata":{}},"$cardContent":{"document":{"id":"2985258c-d42e-4c37-bb90-04a71c75215a","type":"text/plain","content":"Valor a ser guardado: {{CNPJ}}"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"input":{"bypass":false,"$cardContent":{"document":{"id":"1334b50c-c256-4297-95d7-ff1b638de666","type":"text/plain","textContent":"Entrada do usuário","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[{"$id":"ddcd342b-73ec-43d1-a48b-9e42bc4adca4","type":"ExecuteScript","$title":"Executar script","$invalid":false,"settings":{"function":"run","source":"/**\n            * All input variables needs to be passed as function param;\n            * Objects received as param needs to be parsed. Ex.: JSON.parse(inputVariable1);\n            * Objects returned needs to be stringfied. Ex.: JSON.stringify(inputVariable1);\n            **/\n            function run(CNPJ) {\n                CNPJ = CNPJ.replace(/[^\\d]+/g,'');\n                CNPJ = CNPJ.replace(/(\\d{2})(\\d)/, \"$1.$2\"); //Coloca um ponto entre o terceiro e o quarto dígitos\n                CNPJ = CNPJ.replace(/(\\d{3})(\\d)/, \"$1.$2\"); //Coloca um ponto entre o terceiro e o quarto dígitos\n                CNPJ = CNPJ.replace(/(\\d{3})(\\d)/, \"$1/$2\"); //Coloca um hífen entre o terceiro e o quarto dígitos\n                CNPJ = CNPJ.replace(/(\\d{4})(\\d{1,2})$/, \"$1-$2\"); //Coloca um hífen entre o terceiro e o quarto dígitos\n                return CNPJ; //Return value will be saved as \"Return value variable\" field name\n            }","inputVariables":["CNPJ"],"outputVariable":"CNPJ","LocalTimeZoneEnabled":false},"conditions":[]}],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"5aead5c6-cc51-41d7-b8a3-72458a052c77","root":false,"$title":"CNPJ Válido","$position":{"top":"372px","left":"295px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"d36fd3b7-c7e4-43ca-868e-6b54ea98e8d7":{"$contentActions":[{"action":{"$id":"e6b923b4-9846-41bf-acf9-a35db046b352","type":"SendMessage","settings":{"id":"9f80616b-5f17-423c-93fa-dcf3f181f497","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"9f80616b-5f17-423c-93fa-dcf3f181f497","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"action":{"$id":"f87d6bcc-68f4-4aed-aeb4-6cc0a5a6cda9","type":"SendMessage","settings":{"id":"fad94784-273d-445f-b042-4e49f39ffe05","type":"text/plain","content":"Por favor digite um CNPJ válido","metadata":{}},"$cardContent":{"document":{"id":"fad94784-273d-445f-b042-4e49f39ffe05","type":"text/plain","content":"Por favor digite um CNPJ válido"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"input":{"bypass":true,"$cardContent":{"document":{"id":"a8310a8a-1bd7-4448-bbfe-c80f510cb6db","type":"text/plain","textContent":"Entrada do usuário","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[{"stateId":"welcome","$connId":"con_28","$id":"f95913ae-7f59-4324-93ea-db1f99586329","conditions":[{"source":"input","comparison":"exists","values":[]}],"$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"d36fd3b7-c7e4-43ca-868e-6b54ea98e8d7","root":false,"$title":"CNPJ Inválido","$position":{"top":"616px","left":"1033px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false}}
+{
+    "onboarding": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "a24a3156-5b7e-4123-9bc2-04e4903f0aad",
+                            "type": "text/plain"
+                        },
+                        "editable": false,
+                        "deletable": false,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "welcome",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ]
+                    }
+                ],
+                "$id": "f39e871c-afc0-4532-974c-ac2241ca12c1",
+                "$connId": "con_3",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "onboarding",
+        "root": true,
+        "$position": {
+            "top": "120px",
+            "left": "644px"
+        },
+        "$title": "Início",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "fallback": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "e9d8d98d-7570-4486-b43d-845622217de4",
+                            "type": "text/plain"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "error",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ]
+                    }
+                ],
+                "$id": "79362a02-d11b-4ac0-9f09-c7204aae87d5",
+                "$connId": "con_8",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "fallback",
+        "$position": {
+            "top": "120px",
+            "left": "877px"
+        },
+        "$title": "Exceções",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "welcome": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "f660bc9d-dcab-410d-b94e-ce127c9df369",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "a8734b8f-8070-4c0c-8430-cfce108fb777",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "a8734b8f-8070-4c0c-8430-cfce108fb777",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "1a2d4b4f-de24-4799-ab5d-e1277f62b685",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "7fc92d8f-4b9f-49a5-90c0-de7ea11ce638",
+                        "type": "text/plain",
+                        "content": "Digite o CNPJ",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "7fc92d8f-4b9f-49a5-90c0-de7ea11ce638",
+                            "type": "text/plain",
+                            "content": "Digite o CNPJ"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "e703fb8a-249c-4f43-ac2c-e9d65abc5d26",
+                            "type": "text/plain",
+                            "content": "CNPJ"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "CNPJ",
+                    "validation": {
+                        "rule": "regex",
+                        "regex": "^(?=.{14,18}$)^([0-9]{2}\\.?[0-9]{3}\\.?[0-9]{3}\\/?[0-9]{4}\\-?[0-9]{2})*$",
+                        "error": "Por favor digite um CNPJ válido"
+                    }
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "c146fc6c-7784-40e3-af31-317b9b0c2f82",
+                "$connId": "con_13",
+                "$id": "74baf8c3-1254-4031-b3e3-395b2588ea71",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": []
+                    }
+                ],
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "welcome",
+        "$position": {
+            "top": "417px",
+            "left": "638px"
+        },
+        "$title": "Boas vindas",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "error": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "60aaf790-4026-431c-a23f-88b0e5817d70",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000002",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000002",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "9c18ff4c-eb2a-4438-9f90-28d6a001f8d8",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000003",
+                        "type": "text/plain",
+                        "content": "Desculpe, não consegui entender!",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000003",
+                            "type": "text/plain",
+                            "content": "Desculpe, não consegui entender!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "1ccd6b40-f82d-443a-a99c-c4bc0c315e40",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "error",
+        "$position": {
+            "top": "240px",
+            "left": "877px"
+        },
+        "$title": "Erro padrão",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "c146fc6c-7784-40e3-af31-317b9b0c2f82": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "4aef9e6a-90a7-4d71-8bd2-17d1309132e1",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "5aead5c6-cc51-41d7-b8a3-72458a052c77",
+                "$connId": "con_18",
+                "$id": "9128fc5e-b5ed-4954-8442-180ad1085f65",
+                "conditions": [
+                    {
+                        "source": "context",
+                        "comparison": "equals",
+                        "values": [
+                            "true"
+                        ],
+                        "variable": "isCNPJValid"
+                    }
+                ],
+                "$invalid": false
+            },
+            {
+                "stateId": "d36fd3b7-c7e4-43ca-868e-6b54ea98e8d7",
+                "$connId": "con_23",
+                "$id": "754c2e29-1704-41f3-8200-50b14313a13b",
+                "conditions": [
+                    {
+                        "source": "context",
+                        "comparison": "equals",
+                        "values": [
+                            "false"
+                        ],
+                        "variable": "isCNPJValid"
+                    }
+                ],
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [
+            {
+                "$id": "de5dd581-5394-40e1-b016-10102b469add",
+                "type": "ExecuteScript",
+                "$title": "Executar script",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "/**\n            * All input variables needs to be passed as function param;\n            * Objects received as param needs to be parsed. Ex.: JSON.parse(inputVariable1);\n            * Objects returned needs to be stringfied. Ex.: JSON.stringify(inputVariable1);\n            **/\n            function run(cnpj) {\n \n    cnpj = cnpj.replace(/[^\\d]+/g,'');\n \n    if(cnpj == '') return false;\n     \n    if (cnpj.length != 14)\n        return false;\n \n    // Elimina CNPJs invalidos conhecidos\n    if (cnpj == \"00000000000000\" || \n        cnpj == \"11111111111111\" || \n        cnpj == \"22222222222222\" || \n        cnpj == \"33333333333333\" || \n        cnpj == \"44444444444444\" || \n        cnpj == \"55555555555555\" || \n        cnpj == \"66666666666666\" || \n        cnpj == \"77777777777777\" || \n        cnpj == \"88888888888888\" || \n        cnpj == \"99999999999999\")\n        return false;\n         \n    // Valida DVs\n    tamanho = cnpj.length - 2\n    numeros = cnpj.substring(0,tamanho);\n    digitos = cnpj.substring(tamanho);\n    soma = 0;\n    pos = tamanho - 7;\n    for (i = tamanho; i >= 1; i--) {\n      soma += numeros.charAt(tamanho - i) * pos--;\n      if (pos < 2)\n            pos = 9;\n    }\n    resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;\n    if (resultado != digitos.charAt(0))\n        return false;\n         \n    tamanho = tamanho + 1;\n    numeros = cnpj.substring(0,tamanho);\n    soma = 0;\n    pos = tamanho - 7;\n    for (i = tamanho; i >= 1; i--) {\n      soma += numeros.charAt(tamanho - i) * pos--;\n      if (pos < 2)\n            pos = 9;\n    }\n    resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;\n    if (resultado != digitos.charAt(1))\n          return false;\n           \n    return true;\n    \n}",
+                    "inputVariables": [
+                        "CNPJ"
+                    ],
+                    "outputVariable": "isCNPJValid",
+                    "LocalTimeZoneEnabled": false
+                },
+                "conditions": []
+            }
+        ],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "c146fc6c-7784-40e3-af31-317b9b0c2f82",
+        "root": false,
+        "$title": "Validar CNPJ",
+        "$position": {
+            "top": "618px",
+            "left": "641px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "5aead5c6-cc51-41d7-b8a3-72458a052c77": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "714ee349-fc41-4f76-bf08-943e3b2e10d0",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "f2591beb-484f-455d-96bb-83e89a0e45c3",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "f2591beb-484f-455d-96bb-83e89a0e45c3",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "e5e8d47b-9a1d-408d-af2a-da9a57f6d777",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "835ba2b6-79e3-42c0-878a-7ed41cb6ad31",
+                        "type": "text/plain",
+                        "content": "O CNPJ é válido",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "835ba2b6-79e3-42c0-878a-7ed41cb6ad31",
+                            "type": "text/plain",
+                            "content": "O CNPJ é válido"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "74628595-9e07-4978-a276-db62a35949d0",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "30ec927d-0b41-4789-b502-1c0e8625a229",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "30ec927d-0b41-4789-b502-1c0e8625a229",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "b52ef254-cedb-4ec6-85e5-60c51da039ed",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "2985258c-d42e-4c37-bb90-04a71c75215a",
+                        "type": "text/plain",
+                        "content": "Valor a ser guardado: {{CNPJ}}",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "2985258c-d42e-4c37-bb90-04a71c75215a",
+                            "type": "text/plain",
+                            "content": "Valor a ser guardado: {{CNPJ}}"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "1334b50c-c256-4297-95d7-ff1b638de666",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [
+            {
+                "$id": "ddcd342b-73ec-43d1-a48b-9e42bc4adca4",
+                "type": "ExecuteScript",
+                "$title": "Executar script",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "/**\n            * All input variables needs to be passed as function param;\n            * Objects received as param needs to be parsed. Ex.: JSON.parse(inputVariable1);\n            * Objects returned needs to be stringfied. Ex.: JSON.stringify(inputVariable1);\n            **/\n            function run(CNPJ) {\n                CNPJ = CNPJ.replace(/[^\\d]+/g,'');\n                CNPJ = CNPJ.replace(/(\\d{2})(\\d)/, \"$1.$2\"); //Coloca um ponto entre o terceiro e o quarto dígitos\n                CNPJ = CNPJ.replace(/(\\d{3})(\\d)/, \"$1.$2\"); //Coloca um ponto entre o terceiro e o quarto dígitos\n                CNPJ = CNPJ.replace(/(\\d{3})(\\d)/, \"$1/$2\"); //Coloca um hífen entre o terceiro e o quarto dígitos\n                CNPJ = CNPJ.replace(/(\\d{4})(\\d{1,2})$/, \"$1-$2\"); //Coloca um hífen entre o terceiro e o quarto dígitos\n                return CNPJ; //Return value will be saved as \"Return value variable\" field name\n            }",
+                    "inputVariables": [
+                        "CNPJ"
+                    ],
+                    "outputVariable": "CNPJ",
+                    "LocalTimeZoneEnabled": false
+                },
+                "conditions": []
+            }
+        ],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "5aead5c6-cc51-41d7-b8a3-72458a052c77",
+        "root": false,
+        "$title": "CNPJ Válido",
+        "$position": {
+            "top": "372px",
+            "left": "295px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "d36fd3b7-c7e4-43ca-868e-6b54ea98e8d7": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "e6b923b4-9846-41bf-acf9-a35db046b352",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "9f80616b-5f17-423c-93fa-dcf3f181f497",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "9f80616b-5f17-423c-93fa-dcf3f181f497",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "f87d6bcc-68f4-4aed-aeb4-6cc0a5a6cda9",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "fad94784-273d-445f-b042-4e49f39ffe05",
+                        "type": "text/plain",
+                        "content": "Por favor digite um CNPJ válido",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "fad94784-273d-445f-b042-4e49f39ffe05",
+                            "type": "text/plain",
+                            "content": "Por favor digite um CNPJ válido"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "a8310a8a-1bd7-4448-bbfe-c80f510cb6db",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "welcome",
+                "$connId": "con_28",
+                "$id": "f95913ae-7f59-4324-93ea-db1f99586329",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": []
+                    }
+                ],
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "d36fd3b7-c7e4-43ca-868e-6b54ea98e8d7",
+        "root": false,
+        "$title": "CNPJ Inválido",
+        "$position": {
+            "top": "616px",
+            "left": "1033px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    }
+}
