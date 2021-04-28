@@ -1,1 +1,483 @@
-{"onboarding":{"$contentActions":[{"input":{"bypass":false,"$cardContent":{"document":{"id":"a24a3156-5b7e-4123-9bc2-04e4903f0aad","type":"text/plain"},"editable":false,"deletable":false,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[{"stateId":"welcome","conditions":[{"source":"input","comparison":"matches","values":[".*"]}],"$id":"f39e871c-afc0-4532-974c-ac2241ca12c1","$connId":"con_3","$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"onboarding","root":true,"$position":{"top":"120px","left":"644px"},"$title":"Início","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"fallback":{"$contentActions":[{"input":{"bypass":true,"$cardContent":{"document":{"id":"e9d8d98d-7570-4486-b43d-845622217de4","type":"text/plain"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[{"stateId":"error","conditions":[{"source":"input","comparison":"matches","values":[".*"]}],"$id":"79362a02-d11b-4ac0-9f09-c7204aae87d5","$connId":"con_8","$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"onboarding","$invalid":false},"$tags":[],"id":"fallback","$position":{"top":"120px","left":"877px"},"$title":"Exceções","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"welcome":{"$contentActions":[{"action":{"$id":"f660bc9d-dcab-410d-b94e-ce127c9df369","type":"SendMessage","settings":{"id":"a8734b8f-8070-4c0c-8430-cfce108fb777","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"a8734b8f-8070-4c0c-8430-cfce108fb777","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"action":{"$id":"1a2d4b4f-de24-4799-ab5d-e1277f62b685","type":"SendMessage","settings":{"id":"7fc92d8f-4b9f-49a5-90c0-de7ea11ce638","type":"text/plain","content":"Digite o CEP","metadata":{}},"$cardContent":{"document":{"id":"7fc92d8f-4b9f-49a5-90c0-de7ea11ce638","type":"text/plain","content":"Digite o CEP"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false},{"input":{"bypass":false,"$cardContent":{"document":{"id":"e703fb8a-249c-4f43-ac2c-e9d65abc5d26","type":"text/plain","content":"CEP"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false,"variable":"CEP"},"$invalid":false}],"$conditionOutputs":[{"stateId":"5aead5c6-cc51-41d7-b8a3-72458a052c77","$connId":"con_74","$id":"b6276223-271c-41ea-9a21-b0b0801702ca","conditions":[{"source":"input","comparison":"exists","values":[]}],"$invalid":false}],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"welcome","$position":{"top":"417px","left":"638px"},"$title":"Boas vindas","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"error":{"$contentActions":[{"action":{"$id":"60aaf790-4026-431c-a23f-88b0e5817d70","type":"SendMessage","settings":{"id":"00000000-0000-0000-0000-000000000002","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"00000000-0000-0000-0000-000000000002","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left","editing":false}},"$invalid":false},{"action":{"$id":"9c18ff4c-eb2a-4438-9f90-28d6a001f8d8","type":"SendMessage","settings":{"id":"00000000-0000-0000-0000-000000000003","type":"text/plain","content":"Desculpe, não consegui entender!","metadata":{}},"$cardContent":{"document":{"id":"00000000-0000-0000-0000-000000000003","type":"text/plain","content":"Desculpe, não consegui entender!"},"editable":true,"deletable":true,"position":"left","editing":false}},"$invalid":false},{"input":{"bypass":true,"$cardContent":{"document":{"id":"1ccd6b40-f82d-443a-a99c-c4bc0c315e40","type":"text/plain","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false}],"$conditionOutputs":[],"$enteringCustomActions":[],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"onboarding","$invalid":false},"$tags":[],"id":"error","$position":{"top":"240px","left":"877px"},"$title":"Erro padrão","$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false},"5aead5c6-cc51-41d7-b8a3-72458a052c77":{"$contentActions":[{"action":{"$id":"714ee349-fc41-4f76-bf08-943e3b2e10d0","type":"SendMessage","settings":{"id":"f2591beb-484f-455d-96bb-83e89a0e45c3","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"f2591beb-484f-455d-96bb-83e89a0e45c3","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:1293"},{"action":{"$id":"e5e8d47b-9a1d-408d-af2a-da9a57f6d777","type":"SendMessage","settings":{"id":"835ba2b6-79e3-42c0-878a-7ed41cb6ad31","type":"text/plain","content":"O CEP é válido","metadata":{}},"$cardContent":{"document":{"id":"835ba2b6-79e3-42c0-878a-7ed41cb6ad31","type":"text/plain","content":"O CEP é válido"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:1294"},{"action":{"$id":"74628595-9e07-4978-a276-db62a35949d0","type":"SendMessage","settings":{"id":"30ec927d-0b41-4789-b502-1c0e8625a229","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"$cardContent":{"document":{"id":"30ec927d-0b41-4789-b502-1c0e8625a229","type":"application/vnd.lime.chatstate+json","content":{"state":"composing","interval":1000}},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:1295"},{"action":{"$id":"b52ef254-cedb-4ec6-85e5-60c51da039ed","type":"SendMessage","settings":{"id":"2985258c-d42e-4c37-bb90-04a71c75215a","type":"text/plain","content":"Valor a ser guardado: {{CEP}}","metadata":{}},"$cardContent":{"document":{"id":"2985258c-d42e-4c37-bb90-04a71c75215a","type":"text/plain","content":"Valor a ser guardado: {{CEP}}"},"editable":true,"deletable":true,"position":"left"}},"$invalid":false,"$$hashKey":"object:1296"},{"input":{"bypass":false,"$cardContent":{"document":{"id":"1334b50c-c256-4297-95d7-ff1b638de666","type":"text/plain","textContent":"Entrada do usuário","content":"Entrada do usuário"},"editable":false,"deletable":true,"position":"right","editing":false},"$invalid":false},"$invalid":false,"$$hashKey":"object:1297"}],"$conditionOutputs":[],"$enteringCustomActions":[{"$id":"b8605e20-e23a-465f-8d1f-519b2fe9cf33","type":"ExecuteScript","$title":"Executar script","$invalid":false,"settings":{"function":"run","source":"/**\n            * All input variables needs to be passed as function param;\n            * Objects received as param needs to be parsed. Ex.: JSON.parse(inputVariable1);\n            * Objects returned needs to be stringfied. Ex.: JSON.stringify(inputVariable1);\n            **/69903-318\nfunction run(CEP) {\n    CEP = CEP.replace(/(\\d{5})(\\d{1,3})$/, \"$1-$2\"); //Coloca um hífen entre o terceiro e o quarto dígitos\n    return CEP; //Return value will be saved as \"Return value variable\" field name\n}","inputVariables":["CEP"],"outputVariable":"CEP","LocalTimeZoneEnabled":false},"conditions":[]}],"$leavingCustomActions":[],"$inputSuggestions":[],"$defaultOutput":{"stateId":"fallback","$invalid":false},"$tags":[],"id":"5aead5c6-cc51-41d7-b8a3-72458a052c77","root":false,"$title":"CEP Válido","$position":{"top":"594px","left":"637px"},"$invalidContentActions":false,"$invalidOutputs":false,"$invalidCustomActions":false,"$invalid":false}}
+{
+    "onboarding": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "a24a3156-5b7e-4123-9bc2-04e4903f0aad",
+                            "type": "text/plain"
+                        },
+                        "editable": false,
+                        "deletable": false,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "welcome",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ]
+                    }
+                ],
+                "$id": "f39e871c-afc0-4532-974c-ac2241ca12c1",
+                "$connId": "con_3",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "onboarding",
+        "root": true,
+        "$position": {
+            "top": "120px",
+            "left": "644px"
+        },
+        "$title": "Início",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "fallback": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "e9d8d98d-7570-4486-b43d-845622217de4",
+                            "type": "text/plain"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "error",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ]
+                    }
+                ],
+                "$id": "79362a02-d11b-4ac0-9f09-c7204aae87d5",
+                "$connId": "con_8",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "fallback",
+        "$position": {
+            "top": "120px",
+            "left": "877px"
+        },
+        "$title": "Exceções",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "welcome": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "f660bc9d-dcab-410d-b94e-ce127c9df369",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "a8734b8f-8070-4c0c-8430-cfce108fb777",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "a8734b8f-8070-4c0c-8430-cfce108fb777",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "1a2d4b4f-de24-4799-ab5d-e1277f62b685",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "7fc92d8f-4b9f-49a5-90c0-de7ea11ce638",
+                        "type": "text/plain",
+                        "content": "Digite o CEP",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "7fc92d8f-4b9f-49a5-90c0-de7ea11ce638",
+                            "type": "text/plain",
+                            "content": "Digite o CEP"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "e703fb8a-249c-4f43-ac2c-e9d65abc5d26",
+                            "type": "text/plain",
+                            "content": "CEP"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false,
+                    "variable": "CEP"
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "5aead5c6-cc51-41d7-b8a3-72458a052c77",
+                "$connId": "con_74",
+                "$id": "b6276223-271c-41ea-9a21-b0b0801702ca",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": []
+                    }
+                ],
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "welcome",
+        "$position": {
+            "top": "417px",
+            "left": "638px"
+        },
+        "$title": "Boas vindas",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "error": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "60aaf790-4026-431c-a23f-88b0e5817d70",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000002",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000002",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "9c18ff4c-eb2a-4438-9f90-28d6a001f8d8",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000003",
+                        "type": "text/plain",
+                        "content": "Desculpe, não consegui entender!",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000003",
+                            "type": "text/plain",
+                            "content": "Desculpe, não consegui entender!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "1ccd6b40-f82d-443a-a99c-c4bc0c315e40",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "error",
+        "$position": {
+            "top": "240px",
+            "left": "877px"
+        },
+        "$title": "Erro padrão",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "5aead5c6-cc51-41d7-b8a3-72458a052c77": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "714ee349-fc41-4f76-bf08-943e3b2e10d0",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "f2591beb-484f-455d-96bb-83e89a0e45c3",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "f2591beb-484f-455d-96bb-83e89a0e45c3",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1293"
+            },
+            {
+                "action": {
+                    "$id": "e5e8d47b-9a1d-408d-af2a-da9a57f6d777",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "835ba2b6-79e3-42c0-878a-7ed41cb6ad31",
+                        "type": "text/plain",
+                        "content": "O CEP é válido",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "835ba2b6-79e3-42c0-878a-7ed41cb6ad31",
+                            "type": "text/plain",
+                            "content": "O CEP é válido"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1294"
+            },
+            {
+                "action": {
+                    "$id": "74628595-9e07-4978-a276-db62a35949d0",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "30ec927d-0b41-4789-b502-1c0e8625a229",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "30ec927d-0b41-4789-b502-1c0e8625a229",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1295"
+            },
+            {
+                "action": {
+                    "$id": "b52ef254-cedb-4ec6-85e5-60c51da039ed",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "2985258c-d42e-4c37-bb90-04a71c75215a",
+                        "type": "text/plain",
+                        "content": "Valor a ser guardado: {{CEP}}",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "2985258c-d42e-4c37-bb90-04a71c75215a",
+                            "type": "text/plain",
+                            "content": "Valor a ser guardado: {{CEP}}"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1296"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "1334b50c-c256-4297-95d7-ff1b638de666",
+                            "type": "text/plain",
+                            "textContent": "Entrada do usuário",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1297"
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [
+            {
+                "$id": "b8605e20-e23a-465f-8d1f-519b2fe9cf33",
+                "type": "ExecuteScript",
+                "$title": "Executar script",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "/**\n            * All input variables needs to be passed as function param;\n            * Objects received as param needs to be parsed. Ex.: JSON.parse(inputVariable1);\n            * Objects returned needs to be stringfied. Ex.: JSON.stringify(inputVariable1);\n            **/69903-318\nfunction run(CEP) {\n    CEP = CEP.replace(/(\\d{5})(\\d{1,3})$/, \"$1-$2\"); //Coloca um hífen entre o terceiro e o quarto dígitos\n    return CEP; //Return value will be saved as \"Return value variable\" field name\n}",
+                    "inputVariables": [
+                        "CEP"
+                    ],
+                    "outputVariable": "CEP",
+                    "LocalTimeZoneEnabled": false
+                },
+                "conditions": []
+            }
+        ],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "5aead5c6-cc51-41d7-b8a3-72458a052c77",
+        "root": false,
+        "$title": "CEP Válido",
+        "$position": {
+            "top": "594px",
+            "left": "637px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    }
+}
