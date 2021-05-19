@@ -1,0 +1,384 @@
+{
+    "onboarding": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "0baa7a0b-717f-41af-b795-7a89def6c073",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": false,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "welcome",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ]
+                    }
+                ],
+                "$id": "0989c41a-9fab-4382-824f-6bdb9cef2f5e",
+                "$connId": "con_3",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [
+            {
+                "$id": "61d56564-6ede-4930-9c32-fb810c4a9e1d",
+                "type": "ExecuteScript",
+                "$title": "negrito",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "function run() {\n    let negrito = { 'inicio': '', 'fim': '' };\n    try {\n        var resource = \"{{contact.source}}\";\n        switch (resource) {\n            case 'WhatsApp':\n                return { 'inicio': '*', 'fim': '*' };\n            case '0mn.io':\n                return { 'inicio': '<b>', 'fim': '</b>' };\n            default:\n                return negrito;\n        }\n    }\n    catch (ex) {\n        return negrito;\n    }\n}\n",
+                    "inputVariables": [],
+                    "outputVariable": "negrito"
+                },
+                "conditions": []
+            },
+            {
+                "$id": "27b20cde-0649-4b0c-8cae-e145f5923075",
+                "type": "ExecuteScript",
+                "$title": "italico",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "function run() {\n    let italico = { 'inicio': '', 'fim': '' };\n    try {\n        var resource = \"{{contact.source}}\";\n        switch (resource) {\n            case 'WhatsApp':\n                return { 'inicio': '_', 'fim': '_' };\n            case '0mn.io':\n                return { 'inicio': '<i>', 'fim': '</i>' };\n            default:\n                return italico;\n        }\n    }\n    catch (ex) {\n        return italico;\n    }\n}\n",
+                    "inputVariables": [],
+                    "outputVariable": "italico"
+                },
+                "conditions": []
+            },
+            {
+                "$id": "9a40de71-c93f-40c0-9a2c-8012e194051a",
+                "type": "ExecuteScript",
+                "$title": "quebra linha",
+                "$invalid": false,
+                "settings": {
+                    "function": "run",
+                    "source": "function run() {\n    let quebrarLinha = { 'simples': '', 'dupla': '' };\n    try {\n        var resource = \"{{contact.source}}\";\n        switch (resource) {\n            case 'WhatsApp':\n                return { 'simples': '\\n', 'dupla': '\\n\\n' };\n            case '0mn.io':\n                return { 'simples': '<br>', 'dupla': '<br><br>' };;\n            default:\n                return quebrarLinha;\n        }\n    }\n    catch (ex) {\n        return quebrarLinha;\n    }\n}\n",
+                    "inputVariables": [],
+                    "outputVariable": "quebrarLinha"
+                },
+                "conditions": []
+            }
+        ],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [
+            {
+                "background": "#61D36F",
+                "label": "entrada",
+                "id": "blip-tag-c2fef3ca-76b2-b3ff-9e13-a1e7af356ac2",
+                "canChangeBackground": false
+            },
+            {
+                "background": "#FF961E",
+                "label": "HTTP",
+                "id": "blip-tag-39271a23-7406-0a04-5149-980ffc99ab0d",
+                "canChangeBackground": false
+            },
+            {
+                "background": "#FF4A1E",
+                "label": "script",
+                "id": "blip-tag-c9aeb0ae-5695-699e-c13a-f932074c9608",
+                "canChangeBackground": false
+            },
+            {
+                "background": "#7762E3",
+                "label": "registro de evento",
+                "id": "blip-tag-a246cf66-a42d-912c-0bd0-7d9f44cf089e",
+                "canChangeBackground": false
+            },
+            {
+                "background": "#FF1E90",
+                "label": "definir um contato",
+                "id": "blip-tag-9b19dae4-cba8-cd3f-8e89-439b9cc073ac",
+                "canChangeBackground": false
+            },
+            {
+                "background": "#FF6F1E",
+                "label": "redirecionar a um serviço",
+                "id": "blip-tag-f9dc6a14-46a4-85ba-c4b7-c4e3197fd5e7",
+                "canChangeBackground": false
+            },
+            {
+                "background": "#2cc3d5",
+                "label": "variável",
+                "id": "blip-tag-6f6eb328-7344-e437-52c7-95a250395bd9",
+                "canChangeBackground": false
+            }
+        ],
+        "id": "onboarding",
+        "root": true,
+        "$title": "Início",
+        "$position": {
+            "top": "106px",
+            "left": "652px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "fallback": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "d797dd0e-155c-413d-89e9-0cfd32f35464",
+                            "type": "text/plain"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "error",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ]
+                    }
+                ],
+                "$id": "88bbecdd-88d3-43f2-a664-d9253f90588d",
+                "$connId": "con_8",
+                "$invalid": false
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "fallback",
+        "$title": "Exceções",
+        "$position": {
+            "top": "124px",
+            "left": "880px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "welcome": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "e7e808e3-8367-448b-8af8-d6fc011c3bb3",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000000",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000000",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "75b94ae2-885e-4059-a5b8-0058c84fd396",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000001",
+                        "type": "text/plain",
+                        "content": "Olá! {{contact.name}}!\nSeja bem-vindo(a)!"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000001",
+                            "type": "text/plain",
+                            "content": "Olá! {{contact.name}}!\nSeja bem-vindo(a)!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "c9a0e495-ea25-49c5-aa4e-106aaf7eb291",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "welcome",
+        "$title": "Boas vindas",
+        "$position": {
+            "top": "307px",
+            "left": "643px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "error": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "c705dae3-00aa-4254-a49a-ada4657da70c",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000002",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000002",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "action": {
+                    "$id": "07fb895d-9f08-46f7-99b4-4053926607f0",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000003",
+                        "type": "text/plain",
+                        "content": "Desculpe, não consegui entender!"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000003",
+                            "type": "text/plain",
+                            "content": "Desculpe, não consegui entender!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "c3efc640-817c-4aae-affa-c1ada8f9dc48",
+                            "type": "text/plain"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "error",
+        "$title": "Erro padrão",
+        "$position": {
+            "top": "307px",
+            "left": "889px"
+        },
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    }
+}
